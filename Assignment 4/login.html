@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Authentication</title>
+<style>
+  .box{
+    border: 2px solid black;
+    width: 400px;
+    padding: 20px;
+    margin: 50px auto;
+    font-family: Times New Roman;
+  }
+  h2{
+    text-decoration: underline;
+    font-style: italic;
+  }
+  input[type="text"], input[type="password"]{
+    background: black;
+    color: white;
+    width: 200px;
+    height: 25px;
+    border: none;
+  }
+  .btn{
+    text-decoration: underline;
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="box">
+  <h2>AUTHENTIFICATION</h2>
+  <form action="process.php" method="POST">
+    <p><b>Login :</b> <input type="text" name="login" required></p>
+    <p><b>Password:</b> <input type="password" name="password" required></p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="btn" type="submit" value="Submit" name="submit">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="btn" type="reset" value="Cancel">
+    </p>
+  </form>
+</div>
+</body>
+</html>

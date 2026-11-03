@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="POST" action="process.php">
+        <div class="form-group">
+            <label for="firstName" >First Name: </label>
+            <input type="text" name="firstName" id="firstName" placeholder="TUBUO" required> 
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="email" >Email: </label>
+            <input type="email" name="email" id="email" placeholder="ministry@gmail.com" required> 
+          </div>
+            <br>
+            <div class="form-group">
+            <label for="Subject" >Subject: </label>
+            <input type="text" name="subject" id="subject" placeholder="Programming"required> 
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="Country">Country: </label>
+            <select name="country" id="country">
+                <option>none</option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>UK</option>
+            </select> 
+          </div>
+          <br><br><br>
+          <div class="form-group">
+            <label for="comment" >Comment:</label>
+            <textarea name="comment" value="comment" rows="5"></textarea>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="gender" >Gender: </label>
+            <input type="radio" name="gender" value="male">M
+            <input type="radio" name="gender" value="female">F          </div>
+            <br><br>
+            <div class="form-group">
+            <label for="highestDegreeLevel" >Highest Degree Level: </label>
+            <div class="option">
+                <input type="checkbox" name="degree[]" value="opt1">Post-Doc<br>
+                <input type="checkbox" name="degree[]" value="opt2">Ph.D<br>
+                <input type="checkbox" name="degree[]" value="opt3">Master/M.S.c<br>
+                <input type="checkbox" name="degree[]" value="opt4">Licence/B.S.c<br>
+                <input type="checkbox" name="degree[]" value="opt5">Bacc/AL-GCE<br>
+            </div>
+            
+        </div>
+        <div class="button">
+             <button type="reset">reset</button><br><br>
+        <button type="submit">submit</button></div>
+       
+    </form>
+    
+</body>
+</html>
